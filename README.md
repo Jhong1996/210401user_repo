@@ -7,10 +7,14 @@
 本次比赛选用的数据集为arXiv论文引用网络——ogbn-arixv数据集的子集。ogbn-arixv数据集由大量的学术论文组成，论文之间的引用关系形成一张巨大的有向图，每一条有向边表示一篇论文引用另一篇论文，每一个节点提供100维简单的词向量作为节点特征。在论文引用网络中，我们已对训练集对应节点做了论文类别标注处理。本次任务希望参赛者通过已有的节点类别以及论文之间的引用关系，预测未知节点的论文类别。
 
 ## 项目结构
+```
 -|data
 -|work
 -README.MD
 -xxx.ipynb
+```
 ## 使用方式
 A：在AI Studio上[运行本项目](https://aistudio.baidu.com/aistudio/projectdetail/1910566?forkThirdPart=1&shared=1)
+
+
 B：此处由项目作者进行撰写使用方式。
