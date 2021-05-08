@@ -1,32 +1,16 @@
-# Python代码仓库模板
+# 飞桨常规赛：论文引用网络节点分类 - 4月第3名方案
+## 项目描述
+图神经网络（Graph Neural Network）是一种专门处理图结构数据的神经网络，目前被广泛应用于推荐系统、金融风控、生物计算等领域。图神经网络的经典问题主要有三类，分别为节点分类、连接预测和图分类。本次比赛旨在让参赛同学了解并掌握如何使用图神经网络处理节点分类问题。
 
-![GitHub forks](https://img.shields.io/github/forks/GT-ZhangAcer/PythonRepository-Template?style=for-the-badge) ![GitHub Repo stars](https://img.shields.io/github/stars/GT-ZhangAcer/PythonRepository-Template?style=for-the-badge) 
+在过去的一个世纪里，科学出版物的数量每12年增加近一倍，对每一种出版物的主题及领域进行自动分类已成为当下十分重要的工作。本次任务的目标是预测未知论文的主题类别，如软件工程，人工智能，语言计算和操作系统等。比赛所选35个领域标签已得到论文作者和arXiv版主确认并标记。
 
-这是一个简单的迁移模板，使用者只需在[模板仓库](https://github.com/GT-ZhangAcer/PythonRepository-Template)中点击[use this template](https://github.com/GT-ZhangAcer/PythonRepository-Template/generate)即可创建属于自己的具备前端页面空白Paddle项目。
-
+本次比赛选用的数据集为arXiv论文引用网络——ogbn-arixv数据集的子集。ogbn-arixv数据集由大量的学术论文组成，论文之间的引用关系形成一张巨大的有向图，每一条有向边表示一篇论文引用另一篇论文，每一个节点提供100维简单的词向量作为节点特征。在论文引用网络中，我们已对训练集对应节点做了论文类别标注处理。本次任务希望参赛者通过已有的节点类别以及论文之间的引用关系，预测未知节点的论文类别。
 
 ## 项目结构
-
-### Main分支（Default）
-该分支为主要的开发分支，与项目有关的说明和代码文件可放置于此，在仓库被访问时默认展示该分支。
-```
--|
---LICENSE   开源协议文件，默认为MIT开源协议。
---README.md 项目说明文件，可使用Markdowm编辑器进行编辑。
---requirements.txt Python项目依赖列表
-```  
-### gh-pages分支
-该分支下默认会给出静态页面文件，在使用该模板后将自动生成一个项目介绍网页`https://GitHub昵称.github.io/项目名`，我们只需对该分支下的`index.md`文件进行修改即可操控这个页面。
-
-## 使用方法
-
-### Step1 使用模板仓库创建一个新的个人仓库
-进入[模板仓库]()主页，获取最新模板或点击[此处](https://github.com/GT-ZhangAcer/PythonRepository-Template/generate)立即创建一个这样的特殊仓库。
-<img src="https://ai-studio-static-online.cdn.bcebos.com/77a8ffd9cd9b4953a39f609bb2b0a4903bc046f354944d5d9ee776676f580095" width="800px">  
-简单填写仓库信息  
-<img src="https://ai-studio-static-online.cdn.bcebos.com/e42d4a7b3a064e788b0761570b19b27e18f19a9eeba44c21abf22d7270e38fda" width="800px">
-
-### Step2 上传项目文件至个人仓库
-<img src="https://ai-studio-static-online.cdn.bcebos.com/81ed71bc5ab74d01ab3ed244b987a08b7f3664baecf4475f8c337a2cbfcb04e5" width="800px">  
-<img src="https://ai-studio-static-online.cdn.bcebos.com/069da53af0ca4cbe8f2de962d2cd3e2d6dbbba9e44d9411bb0bd8dda8a7c1b52" width="800px"> 
-
+-|data
+-|work
+-README.MD
+-xxx.ipynb
+## 使用方式
+A：在AI Studio上[运行本项目](https://aistudio.baidu.com/aistudio/projectdetail/1910566?forkThirdPart=1&shared=1)
+B：此处由项目作者进行撰写使用方式。
